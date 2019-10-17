@@ -29,10 +29,20 @@ body {
     width: 100%;
   }
 
-   #wrapper.toggled #sidebar-wrapper {
-    margin-left: 0;
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0px;
+    padding-left : 0px;
+    margin-right:0px;
+    padding-right:0px;
   }
 
+  #wrapper.toggled #sidebar-outer {
+    margin-left: 0px;
+    padding-left : 0px;
+    margin-right:0px;
+    padding-right:0px;
+  }
+ 
     @media (min-width: 768px) {
     #sidebar-wrapper {
       margin-left: 0;
@@ -59,7 +69,7 @@ body {
     margin-top: 2rem;
     margin-left: -4rem;
     font-size:3rem;
-
+    text-shadow: 2px 2px 1px grey;
 }
 
 .logo-quote-align{
@@ -68,6 +78,7 @@ body {
   margin-left: 6rem;
   font-style: italic;
   font-size: 2rem;
+  text-shadow: 2px 2px 1px grey;
 }
 
 .header-search{
@@ -110,12 +121,16 @@ body {
     text-align: center;
   }
 
-  .menu-color{
-    background-color: #fed860;
+  .header-bar{
+    font-weight: bold;
   }
 
-  a.menu-color {
+  a.header-bar {
     color: black;
+  }
+
+  .footer-bar{
+    background-color: white;
   }
 
   a.footer-tile {
@@ -130,8 +145,13 @@ body {
     background-color: #fef2b3;
   }
 
-  .navbar-custom-color{
+  /* .navbar-custom-color{
     background-color: #fed860;
+  } */
+
+  #menu{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   /* .navbar-custom-color li
@@ -151,9 +171,48 @@ padding:5px 0;
 .button-color{
   background-color: #8758b5;
   color:#fed860;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #navbarSupportedContent li:hover{
   cursor:pointer;
-  background-color: #f7f7f7;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.sidebar-outer-wrapper {
+  margin-left:10px;
+  margin-right: 10px;
+  padding:10px 10px;
+  /* border-color: black;
+  border-style:solid;
+  border-width: 1px; */
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sidebar-inner-wrapper{
+  /* border-color: black;
+  border-style: solid;
+  border-width: 1px; */
+  border-radius: 5px;
+}
+
+#sidebar-outer a:hover{
+  cursor:pointer;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-shadow-custom{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbarSupportedContent li{
+  margin-right:20px;
+}
+
+/* #header{
+   background-image: linear-gradient(white,#fef2b3,white ); 
+} */
