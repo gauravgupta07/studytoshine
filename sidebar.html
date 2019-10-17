@@ -29,21 +29,21 @@
 
          </div>
          <div class="col">
-            <a class="menu-color" href="/" title="study2shine.com"> Student</a>
+            <a class="header-bar" href="/" title="study2shine.com"> Student</a>
           </div>
           <div class="col">
-              <a class="menu-color" href="/" title="study2shine.com"> Teacher/Tutor</a>
+              <a class="header-bar" href="/" title="study2shine.com"> Teacher/Tutor</a>
           </div>               
             <div class="col">
-            <a class="menu-color" href="/" title="study2shine.com"> Parent</a>
+            <a class="header-bar" href="/" title="study2shine.com"> Parent</a>
          </div>
       </div>
 </div>
-<div class="container-fluid header-color">
+<div class="container-fluid header-color" id="header">
     <div class="row">
         <div class="col-lg-2 col-md-4 col-sm-12">
         <a href="/" title="study2shine.com">
-          <img src="Images/logo.png" alt="study2shine" height="120px" width="120px" class="img-fluid">            
+          <img src="Images/logo.png" alt="study2shine" height="120px" width="120px" class="img-fluid box-shadow-custom">            
         </a>
       </div>
       <div class="col-lg-6 col-md-4 col-sm-12">
@@ -55,28 +55,72 @@
       <div class="col-lg-4 col-md-4 col-sm-12">
           <div class="header-search">
           <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+              <input class="form-control mr-sm-2 box-shadow-custom" type="search" placeholder="Search..." aria-label="Search">
               <button class="btn button-color" type="submit">Login</button>
             </form>
           </div>
       </div>
     </div>
   </div>
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom header-color mt-3 mb-3 shadow-sm p-1">
+    <button class="btn button-color" id="menu-toggle">Toggle Menu</button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="#">Home</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="#">I Learn</a>  
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">I Enjoy</a>  
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">I am Aware</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">I Excel</a>  
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">I Assess</a>    
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My County My Pride</a>      
+              </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav> 
   <!-- header -->
   <div class="d-flex" id="wrapper">  
 
     <!-- Sidebar -->
     <div class="header-color border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading menu-color">Start Learning </div>
-
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action menu-color">Math</a>
-        <a href="#" class="list-group-item list-group-item-action menu-color">Physics</a>
-        <a href="#" class="list-group-item list-group-item-action menu-color">Chemistry</a>
-        <a href="#" class="list-group-item list-group-item-action menu-color">English</a>
-        <a href="#" class="list-group-item list-group-item-action menu-color">Statistics</a>
-        <a href="#" class="list-group-item list-group-item-action menu-color">Biological</a>
-      </div>
+        <div class="sidebar-outer-wrapper mt-3 mb-3 shadow-sm p-2" id="sidebar-outer">
+           <div class="sidebar-heading sidebar-inner-wrapper" id="sidebar-heading">Start Learning </div>
+           <div class="list-group list-group-flush sidebar-inner-wrapper" id="sidebar-inner">
+              <a href="#" class="list-group-item list-group-item-action header-color">Math</a>
+              <a href="#" class="list-group-item list-group-item-action header-color">Physics</a>
+              <a href="#" class="list-group-item list-group-item-action header-color">Chemistry</a>
+              <a href="#" class="list-group-item list-group-item-action header-color">English</a>
+              <a href="#" class="list-group-item list-group-item-action header-color">Statistics</a>
+              <a href="#" class="list-group-item list-group-item-action header-color">Biological</a>
+            </div>
+          </div>
     </div>
 
     <!-- /#sidebar-wrapper -->
@@ -84,50 +128,6 @@
     <!-- Page Content -->
 
     <div id="page-content-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar-custom-color">
-        <button class="btn button-color" id="menu-toggle">Toggle Menu</button>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> 
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">I Learn</a>  
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">I Enjoy</a>  
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">I am Aware</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">I Excel</a>  
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">I Assess</a>    
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">My County My Pride</a>      
-                  </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Courses
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav> 
-
       <div class="container-fluid">
         <h1 class="mt-4">Study2Shine</h1>
         <p>
@@ -154,7 +154,7 @@
         <hr class="w-25 mx-auto pt-5">
         <div class="row text-center mb-5">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
+            <div class="card box-shadow-custom">
                 <video src="https://www.youtube.com/watch?v=d57Q-7LG6jQ" type="video/mp4" autoplay controls>
                   Your browser doesn't support videos!
                  </video>
@@ -165,7 +165,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
+            <div class="card box-shadow-custom">
               <!-- <img class="card-img-top" src="Images/ny.jpg" alt="Card image" class="img-fluid"> -->
               <video src="https://www.youtube.com/watch?v=d57Q-7LG6jQ" type="video/mp4" autoplay controls>
                Your browser doesn't support videos!
@@ -177,7 +177,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
+            <div class="card box-shadow-custom">
                 <video src="https://www.youtube.com/watch?v=d57Q-7LG6jQ" type="video/mp4" autoplay controls>
                   Your browser doesn't support videos!
                  </video>
@@ -232,7 +232,7 @@
                   </ul>                  
           </div>
         </div>          
-        <div class="row footer-tile menu-color"> 
+        <div class="row footer-tile footer-bar"> 
             <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                 <a class="footer-tile" href="#">Terms of use</a> | <a class="footer-tile" href="#">Privacy Policy</a>
              </div>
