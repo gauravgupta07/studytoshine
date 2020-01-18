@@ -240,7 +240,6 @@ padding:5px 0;
   padding: 15px;
 }
 
-#btnRegister a:hover {
-  background-color: #8758b5;
-  color: #fed860;
+a.btn:hover{
+  color: #fed860 !important;
 }
