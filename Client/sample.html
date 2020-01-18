@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Study to Shine</title> 
+
+  <!-- Bootstrap core CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="Content/site-new.css" rel="stylesheet">
+
+</head>
+
+ 
+
+<body>
+   <!-- header starts -->
+   <div class="container-fluid">
+    <!-- <button class="btn button-color mr-2" type="submit" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#signinupPopupBox">Login | Register</button>  -->
+    <button class="btn button-color mr-2" type="submit" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#loginModal">Login2 | Register</button>   
+   </div>
+   
+            <!-- Login | Register popup-->
+            <div class="popup-box gb-modal" id="signinupPopupBox" style="display: block;" block-type="modal">
+             <a href="javascript:void(0);" class="popup-close"></a> 
+             <div class="register-popup-form">              
+          
+               <div class="new_reg_modal_reg_wrap">
+                <div class="new_reg_modal_head">
+                 <h5 class="new_reg_modal_ttl">New Customer?</h5>
+                 <span class="new_reg_modal_subttl">Hurry! <b>Register Now</b> For <b>Unbelievable Discounts</b>.</span>
+                </div>
+                <div class="new_reg_modal_cpn_sec">
+                    <div class="new_reg_cpn_list_wrap">
+                        <div class="new_reg_cpn_list_item" style="border: none;">
+                            <span class="new_reg_cpn_save_text pf-orange-color">GET</span> 
+                            <span class="new_reg_cpn_amt_text"><a href="https://www.pepperfry.com/promotions.html#credits">50% CASHBACK</a></span> 
+                            <span class="new_reg_cpn_con_text">On Your First Purchase, Across All Products. <a href="https://www.pepperfry.com/contact-us-faq.html?section=55" class="LoginRegister-offer-link pf-underline" target="_blank">T&amp;C Apply</a></span>
+                        </div>
+                     </div>
+                </div>            
+                 <div class="new_reg_modal_frm_wrap">         
+                    <form class="popup-controls" name="myRegFrom" onsubmit="PF.HEADER.formValidationInc(this.id, this.name);return false;" id="signup-form" action="https://www.pepperfry.com/customer/ajax_register" method="post" rel="signupBox" autocomplete="off">
+                      <div class="home-login-reg-wrap pf-clear">       
+                        <div id="errormsgTop" class="errormsg" style="display: none;">
+                        </div><br>
+                      <div class="home-login-m-row pf-clear">
+                         <div class="home-rgstr-email wdth-50-prcnt input-filled">
+                             <input class="animate-input log-email" type="text" value="" name="email" id="email" maxlength="100" autocomplete="off" validate="1" data-valid-attr="email">
+                             <label class="animate-label pf-text-dark-grey font-13">Email ID</label>
+                             <span id="email" class="error-msg pf-text-red font-13 pf-semi-bold-text" style="display: none;">Required</span>
+                         </div>
+                         <div class="home-rgstr-mobile wdth-50-prcnt input-filled">
+                             <input type="number" maxlength="10" value="" class="animate-input log-mobile onlynumbers" name="mobile" autocomplete="off" validate="1" data-valid-attr="phone">
+                             <label class="animate-label pf-text-dark-grey font-13">Mobile</label>
+                             <span id="mobile" class="error-msg pf-text-red font-13 pf-semi-bold-text" style="display: none;">Need a valid 10-digit number</span>
+         <!--                    <div id="mobileError1" class="error-msg pf-text-red font-13 pf-semi-bold-text" style="display: none;">Number can't start with 0</div>
+                             <span class="error-msg pf-text-red font-13 pf-semi-bold-text" id="mobile" style="display: block;"></span>-->
+                         </div>
+                      </div>                 
+                    <div class="home-login-m-row pf-clear">                                              
+                    </div>
+                
+                     <input type="hidden" name="registration_location" value="web_reg" id="registration_location">
+                     <input type="hidden" name="terms" value="">
+                  </div>
+                    </form> 
+                </div>
+               </div>
+              <div class="new_reg_modal_login_wrap">
+              <div class="new_reg_modal_head">
+         <h5 class="new_reg_modal_ttl">Already Have An Account?</h5>
+         <span class="new_reg_modal_subttl"><b>Sign In</b> To Track Your Order, Use Wishlist &amp; More.</span>
+       </div>
+    <div class="new_reg_modal_frm_wrap">
+        <form class="popup-controls" name="myLoginForm" onload="PF.HEADER.resetForm();" id="login_popup_login_form" method="post" onsubmit="PF.HEADER.loginValidation(this.id);return false;" action="https://www.pepperfry.com/customer/authenticate">
+                 <div class="error-txt" id="login_error" style="display: none;">Incorrect email ID or password</div><br>
+                 <div class="home-login-frm-wrap">
+                     <input id="capchacount" name="capchacount" value="" type="hidden">
+                    <div class="home-login-m-row">
+                         <div class="home-login-email input-filled">
+                             <input type="text" name="user[new]" value="" class="animate-input log-email" autocomplete="off" validate="1" data-valid-attr="email">
+                             <label class="animate-label pf-text-dark-grey font-13 ">Email ID</label>
+                             <span class="error-msg pf-text-red font-13 pf-semi-bold-text" style="display: none;">Enter a valid Email ID</span>
+                         </div>
+                     </div>
+                     <div class="home-login-m-row">
+                         <div class="home-login-password home-pwd-row input-filled">
+                             <input type="password" name="password" class="animate-input log-pwd home-ip-field" id="password" autocomplete="off" validate="1" data-valid-attr="password">
+                             <label class="animate-label pf-text-dark-grey font-13 ">Password</label>
+                             <span class="error-msg pf-text-red font-13 pf-semi-bold-text" style="display: none;">Enter a valid Password</span>
+                             <div class="reg-pwd-link-wrap">
+                                 <input type="checkbox" class="ck-pwd-show" autocomplete="off" name="pwd-show" id="pwdShow1">
+                                 <label for="pwdShow1" class="reg-pwd-show-link font-12 pf-bold-txt"><span>Show</span></label>
+                             </div>                    
+                         </div>
+                     </div>
+                     <div class="home-login-m-row">
+                         <div id="RecaptchaField-login" style="display: none;"><div><iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdGfygTAAAAAL2wyKXZovYJIGPWvy2XcFICnOBB&amp;hl=en-GB&amp;v=eQmzkx3d5dtuXlLOA4pEID3I&amp;t=40061" frameborder="0" scrolling="no" style="width: 302px; height: 422px;"></iframe><div style="margin: -4px 0px 0px; padding: 0px; background: rgb(249, 249, 249); border: 1px solid rgb(193, 193, 193); border-radius: 3px; height: 60px; width: 300px;"><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: block;"></textarea></div></div></div>
+                         <div id="captchaError" class="error-msg pf-text-red font-13 pf-semi-bold-text" style="display:none;"></div>
+                     </div>
+                     <div class="home-login-m-row">                            
+                         <div class="home-login-remember">
+                             <div class="home-login-m-remember-wrap">
+                                 <input type="checkbox" id="rememberMe" class="css-checkbox" autocomplete="off" name="rememberMe">
+                                 <label for="rememberMe" class="font-13 pf-bold-txt">Keep Me Signed In</label>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="home-login-m-row">
+                         <div class="home-login-btn">
+                             <input type="submit" value="SIGN IN" class="home-login-m-btn  pf-hover-primary-blue-color pf-padding-15 pf-bold-txt pf-text-white pf-round-small pf-center" id="popup_login_form" name="logSubmit">
+                             <a href="javascript:void(0)" onclick="PF.HEADER.viewModal('login-forgot-pwd-wrap')" class="popup-forgot-password home-login-m-forgot-link font-13 pf-semi-bold-text pf-text-light-blue">Forgot Password?</a>
+                         </div>
+                          
+                     </div>
+                 </div>
+                 <div class="cust-social-log-wrap">
+                     <div class="cust-social-ttl">OR CONTINUE WITH</div>
+                     <div class="cust-social-links-wrap">
+                         <a class="cust-social-link" href="javascript:void(0);" onclick="PF.SOCIAL.authenticateFacebookUser()" id="facebookWidget"><img src="https://ii1.pepperfry.com/images/svg/social-login-fb-logo.svg"><span>Facebook</span></a>
+                         <a class="cust-social-link" href="javascript:void(0)" id="googleWidget"><img src="https://ii1.pepperfry.com/images/svg/social-login-google-logo.svg"><span>Google</span></a>
+                     </div>
+                     <div class="cust-social-error" style="display: none;"></div>
+                 </div>
+             </form>
+             </div>
+              </div>
+            </div> 
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

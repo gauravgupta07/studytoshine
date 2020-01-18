@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Study to Shine</title> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="Content/site3.css" rel="stylesheet">
+
+</head>
+<body>
+
+ <div class="container">
+    <button class="btn button-color mr-2" type="submit" data-toggle="modal" 
+    data-backdrop="static" data-keyboard="false" data-target="#signupPopupBox">Register</button> 
+          
+         <!-- registration modal -->
+         <div class="modal fade" id="signupPopupBox"> 
+           <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h4 class="modal-title">Sign Up</h4>
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 <div class="modal-body">
+                    <form action="/action_page.php">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="email">Email ID:</label>
+                            <input type="email" class="form-control" id="emailId" autocomplete="off">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="email">Mobile :</label>
+                            <input type="email" class="form-control" id="emailId" autocomplete="off">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd">
+                          </div> 
+                        </div>                       
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="pwd">Confirm Password:</label>
+                            <input type="password" class="form-control" id="pwdConfirm">
+                          </div>
+                        </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-md-4">
+                          <div class="form-group">
+                          <input type="radio" class="ck-gender-sel" value="1" name="gender" id="radioFemale">Female
+                          </div> 
+                        </div>
+                         <div class="col-md-4">
+                          <div class="form-group">
+                          <input type="radio" class="ck-gender-sel" value="2" name="gender" id="radioMale">Male
+                          </div> 
+                        </div>
+                         <div class="col-md-4">
+                          <div class="form-group">
+                           <input type="radio" class="ck-gender-sel" value="3" name="gender" id="radioTransgender">Transgender
+                          </div>
+                          </div>
+                       </div>                       
+                        <div class="container">
+                          <div class="form-group">
+                          <div class="row">
+                            <div class="col-md-4">                              
+                              Sign Up as
+                            </div>
+                            <div class="col-md-8">
+                              <select name="role">
+                                <option value="Student" selected>Student</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Tutor">Tutor/Parent</option>                               
+                              </select>
+                            </div>                         
+                          </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                              Does your child have an account on Study to Shine?
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            
+                            <div class="col-md-6">
+                              <input type="radio" class="ck-gender-sel" value="3" name="gender" id="radioYes">Yes
+                             </div>
+                             <div class="col-md-6">
+                              <input type="radio" class="ck-gender-sel" value="3" name="gender" id="radioNo">No
+                             </div>
+                            
+                          </div>
+                        </div>  
+                        <div class="form-group"></div>                     
+                       <div class="container">
+                                                
+                            <div class="form-group">
+                              <label for="pwd">Choose Username for yourward:</label>
+                              <input type="text" class="form-control" id="pwdConfirm">
+                            </div>                                                   
+                         
+                                                
+                          <div class="form-group">
+                            <label for="pwd">Set Password:</label>
+                            <input type="password" class="form-control" id="pwdConfirm">
+                          </div>                                                   
+                          <div class="form-group">
+                            <label for="pwd">Choose Level:</label>
+                            <select name="level">
+                            <option value="Foundation" selected>Foundation</option>
+                            <option value="Preparatory">Preparatory</option>
+                            <option value="MiddleSchool">MiddleSchool</option>
+                            <option value="Secondary">Secondary</option>                               
+                          </select>
+                          </div>   
+                       </div>
+                       <div class="form-group">
+                        <button type="submit" value="SIGN IN" class="btn button-color">SIGN UP</button>                          
+                     </div>
+                    </form>
+                 </div>
+              </div>
+            </div>
+         </div>                        
+ </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>  
