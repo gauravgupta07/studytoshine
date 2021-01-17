@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/720d275f39.js" crossorigin="anonymous"></script>
+    <title>Rich Text Editor</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            display: flex;
+            width: 60%;
+            flex-direction: column;
+            align-items: center;
+            height: 70vh;
+            justify-content: center;
+            border: 2px solid black;
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            font-size: 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        iframe{
+            border: 2px solid black;
+            background-color:#e6e6e6;
+            width: 100%;
+            height: 100%;
+        }
+        .page{
+            background-color: #e6e6e6;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body onload="editmode();">
+
+    <div class="buttons">
+        <button onclick="command('bold');"><i class="fas fa-bold"></i></button>
+        <button onclick="command('italic');"><i class="fas fa-italic"></i></button>
+        <button onclick="command('underline');"><i class="fas fa-underline"></i></button>
+        <button onclick="command('strikethrough');"><i class="fas fa-strikethrough"></i></button>
+        <button onclick="command('justifyLeft');"><i class="fas fa-align-left"></i></button>
+        <button onclick="command('justifyCenter');"><i class="fas fa-align-center"></i></button>
+        <button onclick="command('justifyRight');"><i class="fas fa-align-right"></i></button>
+        <button onclick="command('justifyFull');"><i class="fas fa-align-justify"></i></button>
+        <button onclick="command('cut');"><i class="fas fa-cut"></i></button>
+        <button onclick="command('copy');"><i class="fas fa-copy"></i></button>
+        <button onclick="command('indent');"><i class="fas fa-indent"></i></button>
+        <button onclick="command('outdent');"><i class="fa fa-dedent"></i></button>
+        <button onclick="command('subscript');"><i class="fas fa-subscript"></i></button>
+        <button onclick="command('superscript');"><i class="fas fa-superscript"></i></button>
+        <button onclick="command('undo');"><i class="fas fa-undo"></i></button>
+        <button onclick="command('redo');"><i class="fas fa-redo"></i></button>
+        <button onclick="command('insertUnorderedList');"><i class="fas fa-list-ul"></i></button>
+        <button onclick="command('insertOrderedList');"><i class="fas fa-list-ol"></i></button>
+        <button onclick="command('insertParagraph');"><i class="fas fa-paragraph"></i></button>
+        <select onchange="commandArg('formatBlock', this.value);">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+        </select><br>
+        <button onclick="command('insertHorizontalRule');"><b>HR</b></button> 
+        <button onclick="commandArg('createLink', prompt('Enter a URL:'));"><i class="fas fa-link"></i></button> 
+        <button onclick="command('unlink');"><i class="fas fa-unlink"></i></button>
+        <button onclick="toggleSource();"><i class="fas fa-code"></i></button>
+        <button onclick="toggleEdit();"><i class="fas fa-edit"></i></button>
+        Font:<select onchange="commandArg('fontName', this.value);">
+            <option value="Arial">Arial</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Courier">Courier</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+        Size:<select onchange="commandArg('fontSize', this.value);">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        Foreground: <input type="color" onchange="commandArg('foreColor', this.value);">
+        Background: <input type="color" onchange="commandArg('hiliteColor', this.value);">
+        <button onclick="commandArg('insertImage', prompt('Enter an image URL:', ''));"><i class="far fa-image"></i></button>
+        <button onclick="command('selectAll');"><i class="far fa-hand-pointer"></i></button>
+    </div>
+
+    <iframe name="field"></iframe>
+
+    <div class="page">
+        <a onclick="newpage();"  class="topage" href="#">To Web Page</a>
+    </div>
+
+    <script>
+        var showSource = false;
+        var isedit = true;
+
+        function editmode(){
+            field.document.designMode = "On";
+        }
+        function command(type){
+            field.document.execCommand(type, false, null);
+        }
+        function commandArg(type, arg){
+            field.document.execCommand(type, false, arg);
+        }
+        function toggleSource(){
+            if(showSource){
+                field.document.getElementsByTagName('body')[0].innerHTML = field.document.getElementsByTagName('body')[0].textContent;
+                showSource = false
+            }
+            else{
+                field.document.getElementsByTagName('body')[0].textContent = field.document.getElementsByTagName('body')[0].innerHTML;
+                showSource = true
+            }
+        }
+        function toggleEdit(){
+            if(isedit){
+                field.document.designMode = "Off";
+                isedit = false;
+            }
+            else{
+                field.document.designMode = "On";
+                isedit = true;
+            }
+        }
+        function newpage(){
+            a = field.document.getElementsByTagName('body')[0].innerHTML;
+            b = prompt("Enter Webpage title");
+            var newwindow = window.open();
+            newwindow.document.write(a);
+            newwindow.document.title = b;
+            newwindow.document.close();
+        }
+    </script>
+
+</body>
+</html>
