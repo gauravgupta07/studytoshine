@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Study to Shine</title> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="Content/site.css" rel="stylesheet">
+  
+</head>
+<body>
+<!-- header starts -->
+<section>
+<div class="container-fluid header-color">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+          <a href="/" title="study2shine.com">
+            <img src="Images/S2SLogo.png" alt="study2shine" height="120px" width="120px" class="img-fluid">            
+          </a>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-6 col-xs-12">
+          <h1 class="logo-heading">
+            Study to Shine             
+          </h1>
+          <span class="logo-quote-align">-Take charge of your learning</span>
+        </div>
+    </div>
+</div>
+</section>
+<!-- header ends -->
+<!-- The sidebar starts -->
+<section>
+  
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#category">Category</a>
+  <a href="#topics">Topics</a>
+  <a href="#support">Support</a>
+</div>
+</section>
+<!-- The sidebar ends -->
+
+<!-- Body starts -->
+<div class="container content">
+  <h4> Edit a Topic </h4>
+  <p>
+    To modify this category click on "Save" button.
+  </p>
+  <form>
+  <div class="row form-group">
+    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+      <label for="fname">Choose Theme : </label>
+      <select id="theme" name="theme" class="form-control">
+        <option value="I am Aware">I am Aware </option>
+        <option value="My Country My Pride">My Country My Pride</option>        
+      </select>
+    </div> 
+    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+      <label for="fname">Choose Level : </label>
+      <select id="level" name="level" class="form-control">
+        <option value="Foundation">Foundation </option>
+        <option value="Preparatory">Preparatory</option>        
+      </select>
+    </div>
+    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+      <label for="fname">Choose Category : </label>
+      <select id="category" name="category" class="form-control">
+        <option value="health">Health and Hygiene </option>
+        <option value="world">World</option>        
+      </select>
+    </div>  
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+      <label for="title">Enter Topic Title : </label>
+      <input type="text" name="title" class="form-control" placeholder="Topic title..">
+    </div>
+    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+      <label for="By">By : </label>
+      <input type="text" name="By" class="form-control" placeholder="Topic by..">
+    </div>
+    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+      <label for="Keywords">Keywords : </label>
+      <input type="text" name="Keywords" class="form-control" placeholder="Topic keywords..">
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <label for="IntroPara">Introductory Paragraph : </label>
+    <!-- <input type="textarea" name="IntroPara" class="form-control" placeholder="Introductory paragraph.."> -->
+    <textarea id="editor" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="DiscPara">Discussion Paragraph : </label>
+      <input type="textarea" name="DiscPara" class="form-control" placeholder="Discussion paragraph..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="ConcPara">Concluding Paragraph : </label>
+      <input type="textarea" name="ConcPara" class="form-control" placeholder="Concluding paragraph..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="videoLink">Video Link/Embed code  : </label>
+      <input type="text" name="videoLink" class="form-control" placeholder="Video link..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="imageLink">Image Link : </label>
+      <input type="text" name="imageLink" class="form-control" placeholder="Image link..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="mustRead">Must Read : </label>
+      <input type="textarea" name="mustRead" class="form-control" placeholder="Must read..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="references">References : </label>
+      <input type="textarea" name="references" class="form-control" placeholder="References..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-12">
+    <input type="button" class="button" value="Add Quiz" />
+   </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="quiz1">Enter Quiz : </label>
+      <input type="text" name="quiz1" class="form-control" placeholder="Enter quiz..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="ch1">Enter Ans Choice: 1. </label>
+      <input type="text" name="ch1" class="form-control" placeholder="Choice 1..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="ch2">Enter Ans Choice: 2. </label>
+      <input type="text" name="ch2" class="form-control" placeholder="Choice 2..">
+      <a href="#" title="">+ Add another choice</a>
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="ch3">Enter Ans Choice: 3. </label>
+      <input type="text" name="ch3" class="form-control" placeholder="Choice 3..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="ch4">Enter Ans Choice: 4. </label>
+      <input type="text" name="ch4" class="form-control" placeholder="Choice 4..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <label for="correctChoice">Enter correct choice : </label>
+      <input type="text" name="correctChoice" class="form-control" placeholder="Correct choice..">
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <a href="#" title="">+ Add another question</a>
+      </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-12">
+    <input type="button" class="button" value="Save" />
+   </div>
+  </div>
+ </form>
+</div>
+<!-- Body ends -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+    selector: 'textarea#editor',
+    menubar: false
+  });
+</script>
+</body>
+</html>

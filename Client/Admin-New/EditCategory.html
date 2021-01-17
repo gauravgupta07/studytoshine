@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Study to Shine</title> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+
+  <!-- Custom styles for this template -->
+  <link href="Content/admin-site.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Body starts -->
+
+<!-- header tile starts -->
+<section>
+<div class="container-fluid">
+<div class="row header-tile">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-white">
+        <a href="/" title="study2shine.com">
+            <img src="Images/S2SLogo.png" alt="study2shine" height="55px" width="55px" class="img-fluid">
+        </a>
+        <strong><i>studytoshine</i></strong><span class="text-100">TM</span>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 header-tile-text text-center">
+       <span class="header-icon-color">|</span> <a href="/editCategory.html">Edit Category</a> 
+       <span class="header-icon-color">|</span> <a href="/"> Edit Topics </a> 
+       <span class="header-icon-color">|</span> 
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="header-tile-icon">
+            <a href="#">
+              <i class="fa fa-search header-icon-color"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-home header-icon-color"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-bell header-icon-color"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-user-circle-o fa-lg header-icon-color"></i>
+            </a>
+          </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- header tile ends -->
+
+<!-- header starts -->
+<section>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2> Administrator Dashboard </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 message">
+              message goes here.
+            </div>
+          </div>
+    </div>
+</section>
+<!-- header ends -->
+
+<!-- content starts -->
+<section>
+<div class="container-fluid content mt-4">
+<div class="row">
+   <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+     Choose Theme and Level to Create or Modify Category
+   </div>
+ </div>
+ <div class="row content-message">
+  <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+    *Note : Message.
+  </div>
+</div>
+<div class="row item-margin pt-2">
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 mt-1">
+        Choose Theme:
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <select disabled>
+            <option value="I Learn">I Learn</option>
+            <option value="I Assess">I Assess</option>
+        </select>
+    </div>
+</div>
+<div class="row item-margin pt-2">
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 mt-1">
+        Choose Level:
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <select>
+            <option value="Foundation">Foundation</option>
+            <option value="Item 2">Item 2</option>
+        </select>
+    </div>
+</div>
+<div class="row form-group item-margin pt-2">
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+      Category Name:
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <input type="text" name="category" class="form-control text-category pl-4" placeholder="Enter a new category..">
+    </div>
+</div>
+<div class="row form-group item-margin ml-1 pt-3">
+  <input type="button" class="button" value="Save" />
+</div>
+
+</div>
+</section>
+<!-- content ends -->
+
+<!-- Body ends -->
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function showMenu(catClassName) {
+      //document.getElementById("myDropdown").classList.toggle("show");
+      hideMenu();
+      $('div').closest(catClassName).toggleClass("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.classList.contains('fa-ellipsis-v')) {
+        hideMenu();
+      }
+    }
+    
+    function hideMenu() {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

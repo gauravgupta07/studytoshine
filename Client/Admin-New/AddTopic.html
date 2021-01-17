@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Study to Shine</title> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+
+  <!-- Custom styles for this template -->
+  <link href="Content/admin-site.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Body starts -->
+
+<!-- header tile starts -->
+<section>
+<div class="container-fluid">
+<div class="row header-tile">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-white">
+        <a href="/" title="study2shine.com">
+            <img src="Images/S2SLogo.png" alt="study2shine" height="55px" width="55px" class="img-fluid">
+        </a>
+        <strong><i>studytoshine</i></strong><span class="text-100">TM</span>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 header-tile-text text-center">
+       <span class="header-icon-color">|</span> <a href="/editCategory.html">Edit Category</a> 
+       <span class="header-icon-color">|</span> <a href="/"> Edit Topics </a> 
+       <span class="header-icon-color">|</span> 
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="header-tile-icon">
+            <a href="#">
+              <i class="fa fa-search header-icon-color"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-home header-icon-color"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-bell header-icon-color"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-user-circle-o fa-lg header-icon-color"></i>
+            </a>
+          </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- header tile ends -->
+
+<!-- header starts -->
+<section>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2> Administrator Dashboard </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 message">
+              <i>NOTE : Changes made will only be saved once you click on <strong>upload</strong>.</i>
+            </div>
+          </div>
+    </div>
+</section>
+<!-- header ends -->
+
+<!-- content starts -->
+<section>
+<div class="container-fluid content mt-4">
+<div class="row">
+   <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12">
+    <strong>What do you want to do?</strong>
+   </div>
+ </div>
+ <div class="row content-message mt-2">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-1">
+    <input type="button" value="Add Topic" />
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-2">
+    <input type="button" value="Edit Topic" />
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-3">
+    <input type="button" value="Remove Topic" />
+  </div>
+</div>
+<hr>
+<div class="row item-margin pt-2">
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 mt-1">
+        Choose Theme:
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <select disabled>
+            <option value="I Learn">I Learn</option>
+            <option value="I Assess">I Assess</option>
+        </select>
+    </div>
+</div>
+<div class="row item-margin pt-2">
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 mt-1">
+        Choose Level:
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <select>
+            <option value="Foundation">Foundation</option>
+            <option value="Item 2">Item 2</option>
+        </select>
+    </div>
+</div>
+<div class="row form-group item-margin pt-2">
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+      Choose Category:
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <select>
+        <option value="Foundation">Health and Hygiene</option>
+        <option value="Item 2">Item 2</option>
+    </select>
+    </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-1">
+    Enter Topic Details :
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-2">
+    <input type="text" name="title" class="form-control input-border pl-4" placeholder="Topic Title">
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-3">
+    <input type="text" name="by" class="form-control input-border pl-4" placeholder="By ( Name )">
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 order-4">
+    <input type="text" name="keywords" class="form-control input-border full-width pl-4" placeholder="Keywords">
+  </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-1">
+    Introductory Text :
+  </div>
+  <div class="col-lg-7 col-md-4 col-sm-6 col-xs-12 order-2">
+    <textarea name="IntroPara" class="form-control multiline-text full-width pl-4 editor" placeholder="Type here.."> </textarea>
+  </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-1">
+    Discussion Text :
+  </div>
+  <div class="col-lg-7 col-md-8 col-sm-6 col-xs-12 order-2">
+    <textarea name="DiscPara" class="form-control multiline-text full-width pl-4 editor" placeholder="Type here.."> </textarea>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-1">
+  </div>
+  <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 addCategoryLink order-2">
+    + Add More Discussion Paragraph (Add Text Area)
+  </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 order-1">
+    Conclusion Text :
+  </div>
+  <div class="col-lg-7 col-md-8 col-sm-6 col-xs-12 order-2">
+    <textarea name="ConcPara" class="form-control multiline-text full-width pl-4 editor" placeholder="Type here.."> </textarea>
+  </div>
+</div>
+<div class="row item-margin mt-3">
+ <div class="col-lg-2 md-4 col-sm-6 col-xs-12 order-1">
+   Video Link/ Embed Code :
+ </div>
+ <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 order-2">
+  <input type="text" name="VideoLink" class="form-control input-border full-width pl-4" placeholder="Copy link or type URL">
+ </div>
+ <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 order-3">
+   <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 order 1 text-right pt-2">
+      Image Link :
+    </div>
+    <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 order-2">
+     <input type="text" name="ImageLink" class="form-control input-border full-width" placeholder="Copy link or Add">
+    </div>
+   </div>
+ </div>
+</div>
+ <div class="row item-margin mt-3">
+   <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-1">
+      Must Read :
+   </div>
+   <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 order-2">
+    <textarea name="mustRead" class="multiline-text full-width pl-4" placeholder="Type here.."> </textarea>
+   </div>
+ </div>
+ <div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-1">
+     References :
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 order-2">
+   <textarea name="references" class="form-control multiline-text full-width pl-4" placeholder="Mention References"> </textarea>
+  </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-1">
+    Add Quiz :
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 order-2">
+    <input type="button" class="button" value="Yes" />
+    <input type="button" class="button ml-2" value="No" />
+  </div>
+</div>
+<hr class="mt-4">
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+    <h3>Quiz</h3>
+  </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-1">
+    Enter Question 1 :
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 order-2">
+    <input type="text" name="ques1" class="form-control input-border full-width" placeholder="Type here..">
+   </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-1">
+    Option 1 :
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-2">
+    <input type="text" name="ansCh1" class="form-control input-border full-width" placeholder="Answer Choice">
+   </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-1">
+    Option 2 :
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-2">
+    <input type="text" name="ansCh2" class="form-control input-border full-width" placeholder="Answer Choice">
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 addCategoryLink order-3">
+     + Add Another Options
+   </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-1">
+    Correct Answer :
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 order-2">
+    <input type="text" name="ans1" class="form-control input-border full-width" placeholder="Right Answer">
+   </div>
+</div>
+<div class="row item-margin mt-3">
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 addCategoryLink">
+    + Add Another Question
+  </div>
+</div>
+<div class="row col form-group item-margin mt-3">
+  <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6">
+    <input type="button" class="button" value="Upload" />
+  </div>
+  <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 ml-3">
+    <input type="button" class="button pt-1" value="Cancel" />
+  </div>
+</div>
+</div>
+</section>
+<!-- content ends -->
+
+<!-- Body ends -->
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function showMenu(catClassName) {
+      //document.getElementById("myDropdown").classList.toggle("show");
+      hideMenu();
+      $('div').closest(catClassName).toggleClass("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.classList.contains('fa-ellipsis-v')) {
+        hideMenu();
+      }
+    }
+    
+    function hideMenu() {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+    }
+    
+    </script>
+    <script src="https://cdn.tiny.cloud/1/ktdvdjk3einplfdmqarm4lxppnqse2qcsvq4k21dvsxwdn2o/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: '.editor',
+        menubar: true
+      });
+    </script>
+
+</body>
+</html>
